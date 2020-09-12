@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <link href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css" rel="stylesheet" type="text/css" />
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="main-container">
+
+        <div class="nav-left">
+            <span class="material-icons">
+                dashboard
+                </span>
+            <span class="material-icons">
+                assignment
+                </span>
+                <span class="material-icons">
+                    article
+                    </span>
+                        <span class="material-icons">
+                            description
+                            </span>
+                            <span class="material-icons">
+                                today
+                                </span>
+                                <span class="material-icons">
+                                    view_list
+                                    </span>
+                                    <span class="material-icons">
+                                        view_sidebar
+                                        </span>
+        </div>
+    
+        <div class="container-right">
+
+            <!-- ---nav-top--- -->
+            <div class="nav-in-cont-right">
+                <img class="img" width="40px" height="40px" src="assets/1_mk1-6aYaf_Bes1E3Imhc0A.jpeg" alt="">
+                <span class="material-icons setting">
+                    notifications_none
+                </span>
+                <span class="material-icons setting">
+                    settings
+                </span>
+                <span class="material-icons search-icon">
+                    search
+                </span>                
+                <input class="search-input" type="search" name="search" id="search" placeholder="Search">                
+            </div>
+
+            <!-- ---main content--- -->
+            <div class="body-container-main">
+                <div class="heading-cont">
+                    <div class="">
+                        <h1>Attendence</h1>
+                        <p>Hello Charlotte check your daily attendence...</p>
+                    </div>
+
+                    <div class="heading-right">
+                        Tuesday, 14th July 2020
+                    </div>
+                </div>                
+
+                <div class="graph-container">
+                    <h1>MONTH-WISE ATTENDENCE</h1>
+                    
+                    <div class="graph-main">
+                        <div class="ct-chart ct-golden-section"></div>
+                    </div>                    
+
+                    <div class="data-below">
+                        <h1>SUBJECT WISE ATTENDENCE</h1>
+
+                        <div class="data">
+                            <div class="data-items">
+                                <span>English</span>
+                                <span class="text-red">Total Classes:45  Present:38 Absent:7</span>
+                            </div>
+                            <div class="data-items">
+                                <span>English</span>
+                                <span class="text-red">Total Classes:45  Present:38 Absent:7</span>
+                            </div>
+                            <div class="data-items">
+                                <span>English</span>
+                                <span class="text-red">Total Classes:45  Present:38 Absent:7</span>
+                            </div>
+                            <div class="data-items">
+                                <span>English</span>
+                                <span class="text-red">Total Classes:45  Present:38 Absent:7</span>
+                            </div>
+                            <div class="data-items">
+                                <span>English</span>
+                                <span class="text-red">Total Classes:45  Present:38 Absent:7</span>
+                            </div>
+                            <div class="data-items">
+                                <span>English</span>
+                                <span class="text-red">Total Classes:45  Present:38 Absent:7</span>
+                            </div>
+                            <div class="data-items">
+                                <span>English</span>
+                                <span class="text-red">Total Classes:45  Present:38 Absent:7</span>
+                            </div>
+                            <div class="data-items">
+                                <span>English</span>
+                                <span class="text-red">Total Classes:45  Present:38 Absent:7</span>
+                            </div>
+                        </div>
+
+                        <div class="percentage">
+                            <div>88%</div>
+                            <div class="small">Overall Attendence</div>
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    
+                    new Chartist.Bar('.ct-chart', {
+                        labels: ['April 2020', 'May 2020', 'July 2020', 'August 2020'],
+                        series: [
+                            [2, 20, 2, 4, 5, 8, 10],
+                            [4, 5, 8, 2, 6, 3, 10]
+                        ]
+                        }, {
+                        seriesBarDistance: 30,
+                        axisX: {
+                            showGrid: false
+                        }
+                    });
+                </script>
+            </div>
+
+        </div>        
+
+    </div>
+    
+    <div class="advisory">
+        <div class="advisory-title">Advisory</div>
+
+        <div>"According to a research. When students improve their attendence rates, they improve their academic prospects and chances for graduating. Make sure you attend all of your classes until a valid problem occurs."</div>
+    </div>
+
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
